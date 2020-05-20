@@ -2,21 +2,26 @@
  * Copyright(c) 2020,  MBC Team
  * 项目名称:flutter-redux-sample
  * 文件名称:main.dart
- * Date:5/20/20, 4:01 PM
+ * Date:5/20/20, 4:59 PM
  * Author: Eric Li
  */
 
 import "package:flutter/material.dart";
 import 'package:redux/redux.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:flutter_redux_sample/redux/redux_state.dart';
-import 'package:flutter_redux_sample/redux/first_page.dart';
+import 'package:flutter_redux_sample/redux_combine_reducers/redux_state.dart';
+import 'package:flutter_redux_sample/redux_combine_reducers/first_page.dart';
+import 'package:flutter_redux_sample/redux_combine_reducers/user.dart';
+import 'package:flutter_redux_sample/redux_combine_reducers/book.dart';
 
 main() {
   /// 创建全局Store
   final store = Store<ReduxState>(
       getReducer,
-      initialState: ReduxState.initState()
+      initialState: ReduxState(
+          user: User.initData(),
+          book: Book.initData()
+      )
   );
   runApp(ReduxDemo(store));
 }

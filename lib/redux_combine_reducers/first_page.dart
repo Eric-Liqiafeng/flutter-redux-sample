@@ -2,15 +2,15 @@
  * Copyright(c) 2020,  MBC Team
  * 项目名称:flutter-redux-sample
  * 文件名称:first_page.dart
- * Date:5/20/20, 4:02 PM
+ * Date:5/20/20, 5:00 PM
  * Author: Eric Li
  */
 
 import "package:flutter/material.dart";
 import 'package:redux/redux.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:flutter_redux_sample/redux/redux_state.dart';
-import 'package:flutter_redux_sample/redux/next_page.dart';
+import 'package:flutter_redux_sample/redux_combine_reducers/redux_state.dart';
+import 'package:flutter_redux_sample/redux_combine_reducers/next_page.dart';
 
 class FirstPage extends StatefulWidget {
 
@@ -33,9 +33,12 @@ class FirstPageState extends State<FirstPage> {
             body: Center(
                 child: Column(
                   children: <Widget>[
-                    Text(store.state.name),
+                    SizedBox(height: 50),
+                    Text("username is：" + store.state.user.name),
+                    SizedBox(height: 50),
+                    Text("bookName is：" + store.state.book.name),
                     SizedBox(height: 100),
-                    RaisedButton(
+                    FlatButton(
                         onPressed: (){
                           Navigator.of(context).push(MaterialPageRoute(builder: (context){
                             return NextPage();

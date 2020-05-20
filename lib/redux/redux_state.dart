@@ -1,7 +1,7 @@
 /*
  * Copyright(c) 2020,  MBC Team
  * 项目名称:flutter-redux-sample
- * 文件名称:ReduxState.dart
+ * 文件名称:redux_state.dart
  * Date:5/20/20, 4:05 PM
  * Author: Eric Li
  */

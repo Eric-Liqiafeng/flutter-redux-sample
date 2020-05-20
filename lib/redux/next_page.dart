@@ -9,7 +9,7 @@
 import "package:flutter/material.dart";
 import 'package:redux/redux.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:flutter_redux_sample/redux/ReduxState.dart';
+import 'package:flutter_redux_sample/redux/redux_state.dart';
 
 class NextPage extends StatefulWidget {
 
