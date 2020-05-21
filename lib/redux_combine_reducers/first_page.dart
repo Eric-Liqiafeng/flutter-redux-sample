@@ -28,23 +28,23 @@ class FirstPageState extends State<FirstPage> {
         builder: (BuildContext context, Store<ReduxState> store){
           return Scaffold(
             appBar: AppBar(
-              title: Text("ReduxDemo"),
+              title: Text('ReduxDemo'),
             ),
             body: Center(
                 child: Column(
                   children: <Widget>[
                     SizedBox(height: 50),
-                    Text("username is：" + store.state.user.name),
+                    Text('username is：' + store.state.user.name),
                     SizedBox(height: 50),
-                    Text("bookName is：" + store.state.book.name),
+                    Text('bookName is：' + store.state.book.name),
                     SizedBox(height: 100),
-                    FlatButton(
+                    RaisedButton(
                         onPressed: (){
                           Navigator.of(context).push(MaterialPageRoute(builder: (context){
                             return NextPage();
                           }));
                         },
-                        child: Text("next page")
+                        child: Text('next page')
                     )
                   ],
                 )

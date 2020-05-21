@@ -1,7 +1,7 @@
 /*
  * Copyright(c) 2020,  MBC Team
  * 项目名称:flutter-redux-sample
- * 文件名称:next_page.dart
+ * 文件名称:second_page.dart
  * Date:5/20/20, 4:03 PM
  * Author: Eric Li
  */
@@ -26,7 +26,7 @@ class NextPageState extends State<NextPage> {
         builder: (BuildContext context, Store<ReduxState> store){
           return Scaffold(
             appBar: AppBar(
-              title: Text("second page"),
+              title: Text('second page'),
             ),
             body: Center(
                 child: Column(
@@ -37,7 +37,7 @@ class NextPageState extends State<NextPage> {
                         onPressed: (){
                           store.dispatch(ReduxAction.Change);
                         },
-                        child: Text("change name")
+                        child: Text('change name')
                     )
                   ],
                 )

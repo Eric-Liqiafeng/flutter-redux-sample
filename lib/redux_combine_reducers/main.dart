@@ -14,7 +14,7 @@ import 'package:flutter_redux_sample/redux_combine_reducers/first_page.dart';
 import 'package:flutter_redux_sample/redux_combine_reducers/user.dart';
 import 'package:flutter_redux_sample/redux_combine_reducers/book.dart';
 
-main() {
+void main() {
   /// 创建全局Store
   final store = Store<ReduxState>(
       getReducer,

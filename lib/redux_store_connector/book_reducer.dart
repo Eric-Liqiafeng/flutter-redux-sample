@@ -2,12 +2,12 @@
  * Copyright(c) 2020,  MBC Team
  * 项目名称:flutter-redux-sample
  * 文件名称:book_reducer.dart
- * Date:5/20/20, 4:59 PM
+ * Date:5/21/20, 11:05 AM
  * Author: Eric Li
  */
 
 import 'package:redux/redux.dart';
-import "package:flutter_redux_sample/redux_combine_reducers/book.dart";
+import "package:flutter_redux_sample/redux_store_connector/book.dart";
 
 final BookReducer = combineReducers<Book>([
   TypedReducer<Book, AddBookAction>(_add),

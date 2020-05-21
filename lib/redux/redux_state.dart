@@ -9,9 +9,8 @@
 /// 定义一个state
 class ReduxState {
   String name;
-  ReduxState.initState() {
-    name = "eric";
-  }
+  ReduxState(this.name);
+  factory ReduxState.initState({String name}) => ReduxState(name ?? 'eric');
 }
 
 /// 定义action
@@ -22,7 +21,7 @@ enum ReduxAction {
 /// 定义reducer
 ReduxState getReducer(ReduxState state, dynamic action) {
   if(action == ReduxAction.Change) {
-    String str = "6";
+    String str = '6';
     state.name = state.name + str;
   }
   return state;

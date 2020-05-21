@@ -1,7 +1,7 @@
 /*
  * Copyright(c) 2020,  MBC Team
  * 项目名称:flutter-redux-sample
- * 文件名称:next_page.dart
+ * 文件名称:second_page.dart
  * Date:5/20/20, 5:01 PM
  * Author: Eric Li
  */
@@ -28,7 +28,7 @@ class NextPageState extends State<NextPage> {
         builder: (BuildContext context, Store<ReduxState> store){
           return Scaffold(
             appBar: AppBar(
-              title: Text("second page"),
+              title: Text('second page'),
             ),
             body: Center(
                 child: Column(
@@ -36,29 +36,29 @@ class NextPageState extends State<NextPage> {
                     Text(store.state.user.name),
                     Text(store.state.book.name),
                     SizedBox(height: 100,),
-                    FlatButton(
+                    RaisedButton(
                         onPressed: (){
                           store.dispatch(AddUserAction(store.state.user));
                         },
-                        child: Text("add username")
+                        child: Text('add username')
                     ),
-                    FlatButton(
+                    RaisedButton(
                         onPressed: (){
                           store.dispatch(UpdateUserAction(store.state.user));
                         },
                         child: Text("update username")
                     ),
-                    FlatButton(
+                    RaisedButton(
                         onPressed: (){
                           store.dispatch(AddBookAction(store.state.book));
                         },
-                        child: Text("add bookName")
+                        child: Text('add bookName')
                     ),
-                    FlatButton(
+                    RaisedButton(
                         onPressed: (){
                           store.dispatch(UpdateBookAction(store.state.book));
                         },
-                        child: Text("update bookName")
+                        child: Text('update bookName')
                     )
                   ],
                 )

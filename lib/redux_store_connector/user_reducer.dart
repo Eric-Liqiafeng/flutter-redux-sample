@@ -2,12 +2,12 @@
  * Copyright(c) 2020,  MBC Team
  * 项目名称:flutter-redux-sample
  * 文件名称:user_reducer.dart
- * Date:5/20/20, 5:01 PM
+ * Date:5/21/20, 11:07 AM
  * Author: Eric Li
  */
 
 import 'package:redux/redux.dart';
-import "package:flutter_redux_sample/redux_combine_reducers/user.dart";
+import "package:flutter_redux_sample/redux_store_connector/user.dart";
 
 /// 这里combineReducers的作用是把action和函数绑定起来，
 /// 免去了写例如if (action is IncreaseAction)之类的判断语句。
