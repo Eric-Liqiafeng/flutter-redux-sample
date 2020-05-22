@@ -1,8 +1,8 @@
 /*
  * Copyright(c) 2020,  MBC Team
  * 项目名称:flutter-redux-sample
- * 文件名称:user.dart
- * Date:5/20/20, 5:01 PM
+ * 文件名称:user_model.dart
+ * Date:5/21/20, 2:27 PM
  * Author: Eric Li
  */
 

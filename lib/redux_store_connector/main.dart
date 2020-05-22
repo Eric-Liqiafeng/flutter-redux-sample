@@ -9,10 +9,10 @@
 import "package:flutter/material.dart";
 import 'package:redux/redux.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:flutter_redux_sample/redux_store_connector/redux_state.dart';
-import 'package:flutter_redux_sample/redux_store_connector/first_page.dart';
-import 'package:flutter_redux_sample/redux_store_connector/user.dart';
-import 'package:flutter_redux_sample/redux_store_connector/book.dart';
+import 'package:flutter_redux_sample/redux_store_connector/redux/store/redux_state.dart';
+import 'package:flutter_redux_sample/redux_store_connector/view/first_page.dart';
+import 'package:flutter_redux_sample/redux_store_connector/model/user_model.dart';
+import 'package:flutter_redux_sample/redux_store_connector/model/book_model.dart';
 
 void main() {
   /// 创建全局Store

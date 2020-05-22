@@ -2,13 +2,13 @@
  * Copyright(c) 2020,  MBC Team
  * 项目名称:flutter-redux-sample
  * 文件名称:user_view_model.dart
- * Date:5/21/20, 10:05 AM
+ * Date:5/21/20, 1:50 PM
  * Author: Eric Li
  */
 
 import 'package:flutter/material.dart';
-import 'package:flutter_redux_sample/redux_store_connector/redux_state.dart';
-import 'package:flutter_redux_sample/redux_store_connector/user_reducer.dart';
+import 'package:flutter_redux_sample/redux_store_connector/redux/action/user_action.dart';
+import 'package:flutter_redux_sample/redux_store_connector/redux/store/redux_state.dart';
 import 'package:redux/redux.dart';
 
 class UserViewModel {

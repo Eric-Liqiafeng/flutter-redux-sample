@@ -2,17 +2,17 @@
  * Copyright(c) 2020,  MBC Team
  * 项目名称:flutter-redux-sample
  * 文件名称:second_page.dart
- * Date:5/21/20, 11:07 AM
+ * Date:5/21/20, 1:49 PM
  * Author: Eric Li
  */
 
 import "package:flutter/material.dart";
-import 'package:flutter_redux_sample/redux_store_connector/second_page_view_model.dart';
+import 'package:flutter_redux_sample/redux_store_connector/view_model/second_page_view_model.dart';
 import 'package:redux/redux.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:flutter_redux_sample/redux_store_connector/redux_state.dart';
-import 'package:flutter_redux_sample/redux_store_connector/user_reducer.dart';
-import 'package:flutter_redux_sample/redux_store_connector/book_reducer.dart';
+import 'package:flutter_redux_sample/redux_store_connector/redux/store/redux_state.dart';
+import 'package:flutter_redux_sample/redux_store_connector/redux/reducer/user_reducer.dart';
+import 'package:flutter_redux_sample/redux_store_connector/redux/reducer/book_reducer.dart';
 
 class SecondPage extends StatefulWidget {
 
